@@ -17,7 +17,7 @@
         <i class="bi bi-person-fill"></i> <?php echo ucfirst($usuario_logueado); ?>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="<?php echo site_url("auth/salir"); ?>">Cambiar contraseña</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo site_url("auth/salir"); ?>">Salir</a>
         </div>

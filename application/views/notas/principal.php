@@ -58,13 +58,13 @@
                 <td><del><?php echo $n["contenido"];?></del></td>
                 <td><del><?php echo $n["fecha"];?></del></td>
                 <td class="text-center"><a href="<?php echo site_url("notas/eliminar/".$n["nota_id"]);?>" class="bi bi-trash-fill text-danger"></a></td>
-                <td class="text-center"><a href="<?php echo site_url("notas/destachar/".$n["nota_id"]);?>" class="bi bi-check2-square text-success"></a></td>
+                <td class="text-center"><a href="<?php echo site_url("notas/destachar/".$n["nota_id"]);?>" class="bi bi-check2-square text-danger"></a></td>
                 <?php }else{ ?>
                   <td>  <?php echo $n["titulo"];?></td>
                 <td><?php echo $n["contenido"];?></td>
                 <td><?php echo $n["fecha"];?></td>
                 <td class="text-center"><a href="<?php echo site_url("notas/eliminar/".$n["nota_id"]);?>" class="bi bi-trash-fill text-danger"></a></td>
-                <td class="text-center"><a href="<?php echo site_url("notas/tachar/".$n["nota_id"]);?>" class="bi bi-check2-square"></a></td>
+                <td class="text-center"><a href="<?php echo site_url("notas/tachar/".$n["nota_id"]);?>" class="bi bi-check2-square text-info"></a></td>
               </tr>
               <?php } } ?>
             </tbody>
